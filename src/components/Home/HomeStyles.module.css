@@ -1,0 +1,56 @@
+.subHeadingText {
+    background: linear-gradient(#F68E1F, #FCB51D);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.subHeadingText span {
+    border-bottom: 3px solid #FCB51D;
+    padding: 0 20px;
+    position: relative;
+    bottom: .7em;
+    margin-right: .7em;
+    left: 6px;
+}
+
+.avatarCircle {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to bottom, #FCB51D, #1E232D);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatarImg {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 1.2em;
+}
+
+.headingTitleContent {
+    position: relative;
+    right: 11em;
+}
+
+/* social media */
+.socialText {
+    color: #F3F4F6;
+    letter-spacing: 3px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+
+.socialText span {
+    border-left: 2px solid #F3F4F6;
+    height: 58px;
+    position: absolute;
+    left: 28%;
+    top: -72px;
+    margin-left: 6px;
+}
+

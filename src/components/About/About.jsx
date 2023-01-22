@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
     return (  
-        <div>
-            
+        <div name="about" className="h-screen w-full">
+            fdfdfd
         </div>
     );
 }

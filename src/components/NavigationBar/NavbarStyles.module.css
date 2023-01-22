@@ -1,0 +1,85 @@
+.logoImg {
+    width: 80px;
+    height: 80px;
+    margin-top: 3px;
+}
+
+/* Navigation Bar */
+.navLinks {
+    color: #F3F4F6;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 1.3em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to right, #FCB51D, #FCB51D 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinks:before {
+    content: "";
+    background-color: #FCB51D;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.navLinks:hover {
+    background-position: 0;
+}
+
+.navLinks:hover::before {
+    width: 100%;
+}
+
+/* Mobile menu */
+.navMenuLists {
+    color: #F3F4F6;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to right, #FCB51D, #FCB51D 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navMenuLists:before {
+    content: "";
+    background-color: #FCB51D;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.navMenuLists:hover {
+    background-position: 0;
+}
+
+.navMenuLists:hover::before {
+    width: 100%;
+}
