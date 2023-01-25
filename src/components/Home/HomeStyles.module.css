@@ -34,7 +34,8 @@
 
 .headingTitleContent {
     position: relative;
-    right: 11em;
+    right: 10em;
+    bottom: 18px;
 }
 
 /* social media */
@@ -54,3 +55,55 @@
     margin-left: 6px;
 }
 
+/* scroll animation */
+.scrollArea {
+    display: flex;
+}
+
+.mouseScroll {
+    width: 22px;
+    height: 36px;
+    border: 2px solid #9CA3AF;
+    border-radius: 60px;
+    position: relative;
+}
+
+.mouseScroll:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9CA3AF;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 18px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .avatarImg {
+        height: 180px;
+        width: 180px;
+    }
+
+    .avatarCircle {
+        width: 180px;
+        height: 180px;
+        position: relative;
+        bottom: 6em;
+    }
+
+    .headingTitleContent {
+        position: relative;
+        right: 4em;
+    }
+}
