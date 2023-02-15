@@ -1,12 +1,12 @@
 .aboutHeading {
     position: relative;
-    top: 3.4em;
+    top: 3em;
 }
 
 .downloadBtn {
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 150%;
+    top: 170%;
     transform: translate(-50%, -50%);
 }

@@ -1,0 +1,18 @@
+.skillsHeading {
+    position: relative;
+    top: 3em;
+}
+
+.card {
+    background-color: #242A35;
+    width: 230px;
+    height: 170px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+.card:hover {
+    background-color: #1E232D;
+    transition: all .2s ease-in;
+}

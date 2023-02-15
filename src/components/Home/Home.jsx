@@ -8,53 +8,55 @@ import profileAvatar from '../../assets/avatar_profile.svg';
 import FloatingCubesBG from '../FloatingCubes/FloatingCubes';
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
-import 'animate.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Home() {
-    
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+
     return (  
         <div className="w-full h-screen bg-gradient-to-b from-dark-navy to-light-navy">
             {/* Floating cubes background */}
             <FloatingCubesBG/>
             <Container maxWidth="lg" className="flex flex-col mx-auto h-full justify-center items-center px-4 md:flex-row">
                 <div className="flex flex-col h-full justify-center">
-                    <div className="animate__animated animate__fadeInUp animate__slow">
-                        <div className={classes.headingTitleContent}>
-                            <Typography variant="h4" className={classes.subHeadingText}><span></span>Hello,</Typography>
-                            <Typography variant="h2" className="text-gray-100 font-semibold text-4xl sm:text-7xl mt-[2px]">I'm Leanne</Typography>
-                            <Typography variant="h5" className="text-gray-400 text-[13px] sm:text-xl uppercase tracking-[1px] sm:tracking-[5px] ml-[3px] mt-[3px]">
-                                <Typewriter 
-                                options={{
-                                    autoStart: true,
-                                    loop: true,
-                                    delay: 50,
-                                    strings: [
-                                        "Graphic Designer",
-                                        "Frontend Developer"
-                                    ]
-                                }}>
-                                </Typewriter>
-                            </Typography>
-                        </div>
+                    <div className={classes.headingTitleContent} data-aos="fade-up">
+                        <Typography variant="h4" className={classes.subHeadingText}><span></span>Hello,</Typography>
+                        <Typography variant="h2" className="text-gray-100 font-semibold text-4xl sm:text-7xl mt-[2px]">I'm Leanne</Typography>
+                        <Typography variant="h5" className="text-gray-400 text-[13px] sm:text-xl uppercase tracking-[1px] sm:tracking-[5px] ml-[3px] mt-[3px]">
+                            <Typewriter 
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                                delay: 50,
+                                strings: [
+                                    "Graphic Designer",
+                                    "Frontend Developer"
+                                ]
+                            }}>
+                            </Typewriter>
+                        </Typography>
                     </div>
-                    <div className="relative right-[10em] top-[2px]">
+                    <div className="relative right-[10em] top-[2px]" data-aos="fade-right" data-aos-delay="1000">
                         <Link to="projects" smooth={true} className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden h-[45px] font-medium text-gray-100 transition duration-300 ease-out bg-gradient-to-r from-orange to-light-yellow rounded-md shadow-md group">
                             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-gray-100 duration-300 -translate-x-full bg-navy-black border-2 border-light-yellow rounded-md group-hover:translate-x-0 ease">
                                 <HiArrowRight size={25} className="fill-gray-100"/>
                             </span>
                             <span className="absolute flex items-center justify-center w-full h-full text-dark-navy transition-all duration-300 transform group-hover:translate-x-full ease">View Portfolio</span>
                             <span className="relative invisible">View Portfolio</span>
-                        </Link>
+                        </Link>   
                     </div>
                 </div>
-                <div className="relative right-[4em] sm:left-[10em]">
+                <div className="relative right-[4em] sm:left-[10em]" data-aos="fade-left" data-aos-delay="2000">
                     <div className={classes.avatarCircle}>
                         <img src={profileAvatar} alt="profile avatar" className={classes.avatarImg}/>
                     </div>
                 </div>
 
                 {/* scroll animation */}
-                <div className="absolute left-[12.7%] bottom-[18%]">
+                <div className="absolute left-[12.7%] bottom-[18%]" data-aos="fade-up">
                     <div className={classes.scrollArea}>
                         <div className={classes.mouseScroll}></div>
                         <p className="text-gray-400 ml-[14px] mt-[5px]">scroll down</p>

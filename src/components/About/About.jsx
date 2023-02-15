@@ -6,13 +6,13 @@ import cv from "../../assets/cv/ltcreative_resume.pdf";
 
 function About() {
     return (  
-        <div name="about" className="h-screen w-full bg-navy-black">
-            <div className="relative top-[10%]">
+        <div name="about" className="h-[80vh] w-full bg-navy-black">
+            <div className="relative top-[8%]">
                 <div className={classes.aboutHeading}>
-                    <Typography variant="h2" className="text-light-navy text-center font-bold uppercase tracking-[1px]">About</Typography>
+                    <Typography variant="h2" className="text-light-navy text-center font-bold uppercase tracking-[1px]">About Me</Typography>
                     <Typography variant="h5" className="text-gray-100 font-semibold font-[16px] text-center relative bottom-[2.2em]">Know Me More</Typography>
                 </div>
-                <div className="relative top-[2em] mx-auto w-[50%]">
+                <div className="relative top-[3em] mx-auto w-[50%]">
                     <Typography variant="body2" className="text-gray-100 tracking-[1px] text-center">
                         A graduate graphic designer and frontend developer with a particular interest in UX and UI
                         web development. Willing to learn new skills and to take on new challenges to create interactive
